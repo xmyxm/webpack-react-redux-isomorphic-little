@@ -50,6 +50,7 @@ git clone 本项目
 说明：
 
 1.此项目 线上访问地址(单页应用，因为非node环境所以非同构，部署于iis服务器) http://qqweb.top/m/index.html
+
 2.little 版本相比较非 little 版本 会在node端直接调用 api 的function 而省去了之前在 node 端发送 127.0.0.1 的网络消耗，性能更好
 
 
