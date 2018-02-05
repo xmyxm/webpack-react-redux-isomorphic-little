@@ -1,0 +1,76 @@
+@rem:10rem;
+
+.loadingbox {
+	position: absolute;
+    top: 4.4rem;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+	background:#f0f0f0;
+
+	.bg{
+		position: absolute;
+		width: 100/@rem;
+		background-color: #000;
+		height: 100/@rem;
+		line-height: 100/@rem;
+		vertical-align: middle;
+		border-radius: 1px;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		.square {
+		    width: 20/@rem;
+		    height: 20/@rem;
+		    border: 1px rgba(255,255,255,1) solid;
+		    display: inline-block;
+		    position: relative;
+		    animation: fill_color 5s linear infinite;
+		
+			&:after{
+			    width: 4/@rem;
+			    height: 4/@rem;
+			    position: absolute;
+			    content: "";
+			    background-color: rgba(255,255,255,1);
+			    top: -8/@rem;
+			    left: 0/@rem;
+			    animation: square_check 1s ease-in-out infinite;
+			}
+		}
+	}
+
+}
+
+@keyframes square_check{
+    25%{ left: 22/@rem; top: -8/@rem;}
+    50%{ left: 22/@rem; top: 22/@rem;}
+    75%{ left: -9/@rem; top: 22/@rem;}
+    100%{ left: -9/@rem; top: -7/@rem;}
+}
+
+@keyframes fill_color{
+    0%{ box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0.1);}
+    100%{ box-shadow: inset 0px -20/@rem 0px 0px rgba(255,255,255,1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

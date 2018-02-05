@@ -1,0 +1,38 @@
+@rem:10rem;
+
+.linkbox{
+	padding-top: 30/@rem;
+
+	.item{
+		padding:20/@rem 0; 
+		display: flex;
+		justify-content: space-between;
+	    align-items: center;
+
+		.icon{
+			.text{
+				margin-left: 5/@rem;
+			}
+
+			.github{
+				background: url('../../icons/github-grey.svg') no-repeat center;
+			}
+
+			.qq{
+				background: url('../../icons/email_grey.svg') no-repeat center;
+			}
+			.github,.qq{
+				vertical-align: middle;
+				display: inline-block;
+				width: 20/@rem;
+				height: 20/@rem;
+				background-size: 20/@rem 20/@rem!important;
+			}
+		}
+
+		.site{
+			color:#555;
+			text-decoration: none;
+		}
+	}
+}

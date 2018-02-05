@@ -1,0 +1,86 @@
+@rem:10rem;
+
+.listbox{
+	color: #555;
+
+	.list{
+		padding-top: 5/@rem;
+
+		.item{
+			position: relative;
+			padding-top: 5/@rem;
+			padding-bottom: 5/@rem;
+
+			.clickarea{
+				text-decoration: none;
+				display: block;
+				color: #555;
+
+				.contenthead{
+					display: flex;
+					box-pack:justify;
+				    align-items: center;
+				    justify-content: space-between;
+
+
+					.title{
+						flex:1;
+						font-size: 14/@rem;
+						text-decoration: none;
+						color: #555;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						white-space: nowrap;
+						font-weight: 400;
+					}
+
+					.tag{
+						padding-left: 10/@rem;
+						font-size: 12/@rem;
+					}
+				}
+
+				.content{
+					text-indent:2em;
+					-webkit-line-clamp: 3;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					-webkit-box-orient: vertical;
+					display: -webkit-box;
+					margin: 4/@rem 0;
+				}
+				.information{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					font-size: 12/@rem;
+				}
+				
+				&::after{
+					content:"";
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 1px;
+					background: #e0dcdc;
+					transform: scaleY(.5);
+				}
+			}
+		}
+	}
+	
+	.bottominfo{
+		color: #000;
+		padding: 10px 0px;
+		text-align: center;
+		font-size: 14/@rem;
+		font-weight: 200;
+	}
+
+}
+
+
+
+
+

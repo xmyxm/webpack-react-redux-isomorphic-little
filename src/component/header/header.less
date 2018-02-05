@@ -1,0 +1,154 @@
+@rem:10rem;
+
+.header{
+	height: 44/@rem;
+
+	.topbtn{
+		z-index: 10;
+		display: flex;
+		height: 44/@rem;
+		align-items: center;
+		justify-content: space-between;
+		background: #000;
+		color: #fff;
+		padding-left: 10/@rem;
+		padding-right: 10/@rem;
+		font-size: 18/@rem;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+
+		.title{
+			flex:1;
+		}
+
+		.menuicon{
+			background: url('../../icons/menu-white.svg') no-repeat center;
+		}
+
+		.searchicon{
+			background: url('../../icons/search-white.svg') no-repeat center;
+		}
+
+		.blogicon{
+			flex:1;
+			background: url('../../icons/blog-white.svg') no-repeat center;
+			background-size: 30/@rem 30/@rem!important;
+		}
+
+		.menuicon , .searchicon, .blogicon{
+			display: inline-block;
+			width: 40/@rem;
+			height: 40/@rem;
+			background-size: 20/@rem 20/@rem;
+			cursor: pointer;
+		}
+
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background: #100505;
+			transform: scaleY(.5);
+		}
+	}
+
+	.classify{
+		padding: 20/@rem 20/@rem;
+		backface-visibility: hidden;
+		transition: transform 0.5s ease;
+		-webkit-overflow-scrolling: touch;
+		display: block;
+		height: 100%;
+		left: 0;
+		right: 0;
+		top: -100%;
+		overflow-y: auto;
+		position: fixed;
+		z-index: 1;
+		background: #181d1f;
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+		color:#b8b8b8;
+
+		.userinfo{
+			display: flex;
+			align-items: center;	
+
+			.usericon {
+				display: inline-block;
+				width: 30/@rem;
+				height: 30/@rem;
+				background: url('../../icons/avatar.jpg') no-repeat center;
+				background-size: 30/@rem 30/@rem;
+
+				.imgfile{
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.usercontent{
+				flex:1;
+				padding-left: 20/@rem;
+				font-size: 14/@rem;
+				text-align: right;
+			}
+		}
+
+		.nav{
+			font-size: 14/@rem;
+
+			.item{
+				padding-top:20/@rem; 
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.homegray{
+					background: url('../../icons/home-gray.svg') no-repeat center;
+				}
+
+				.bloggray{
+					background: url('../../icons/blog-gray.svg') no-repeat center;
+				}
+				
+				.usergray{
+					background: url('../../icons/user-gray.svg') no-repeat center;
+				}
+
+				.emailgray{
+					background: url('../../icons/email-gray.svg') no-repeat center;
+				}
+
+				.iconbase{
+					width: 20/@rem;
+					height: 20/@rem;
+					background-size: 20/@rem 20/@rem;
+				}
+				.name{
+					flex:1;
+					text-align: right;
+					text-decoration: none;
+					color:#b8b8b8;
+				}
+			}
+		}
+	}
+	.show {
+		transform: translateY(100%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
